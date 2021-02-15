@@ -1,0 +1,29 @@
+body{
+    background-size: cover;
+}
+.header {
+    width:100%;
+    color: #f4bd34;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    background-color: hotpink;
+}
+#snapshotbtn{
+background-color:#f4bd34 ;
+}
+#snapshotbtn:hover{
+background-color:hotpink;
+font-size: 20px;
+border-radius:10px;
+border-color: rgba(255, 192, 203, 0);
+border-width:5px;
+}
+canvas{
+    animation-name:example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+  from{box-shadow: 1px 1px 40px rgb(255, 121, 237);}  to{box-shadow: 1px 1px 40px rgb(255, 133, 85);}
+}
