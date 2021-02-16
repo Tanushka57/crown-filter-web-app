@@ -20,16 +20,18 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0, 600, 600);
-    fill(231, 181, 55);
-    stroke(231, 181, 55);
-    triangle(headX, headY - 70, headX + 200, headY, headX - 70, headY + 100, );
+    image(crown,headX,headY,350,250);
 }
 
 
 function gotPoses(results) {
     if (results.length > 0) {
         console.log(results);
-        headX = results[0].pose.nose.x - 100;
-        headY = results[0].pose.nose.y - 100;
+        headX = results[0].pose.nose.x - 195;
+        headY = results[0].pose.nose.y - 255;
     }
+}
+
+function preload() {
+    crown=loadImage('https://i.postimg.cc/dVsNhDWH/crown.png');
 }
